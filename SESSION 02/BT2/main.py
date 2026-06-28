@@ -1,11 +1,13 @@
 from fastapi import FastAPI
 
 app = FastAPI()
+
 students = [
-    {"id": 1, "Name": "An"},
-    {"id": 2, "Name": "Binh"},
-    {"id": 3, "Name": "Cuong"},
+    {"id": 1, "name": "An"},
+    {"id": 2, "name": "Binh"},
+    {"id": 3, "name": "Cuong"},
 ]
-@app.get("/student")
-def get_student():
-    return students[0]
+
+@app.get("/students")
+def get_students():
+    return students
