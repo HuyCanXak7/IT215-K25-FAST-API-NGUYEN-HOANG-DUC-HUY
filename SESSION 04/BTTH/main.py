@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from typing import Optional
-
+from Pydantyc import Basemodel
 app = FastAPI()
 
 # Danh sách khóa học
